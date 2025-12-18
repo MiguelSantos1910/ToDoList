@@ -6,9 +6,10 @@ class Tarefa:
         self.concluido = False
         self.hora = hora
         self.data = data
+        self.concluida = False
 
     def concluir(self):
-        self.concluido = True
+        self.concluida = True
 
     def atualizar(self, titulo=None, prioridade=None):
         if titulo:

@@ -21,15 +21,13 @@ class fazer_login:
     
     def login(self, email, senha):
         user = self.buscar_email(email)
-        if not user:
-            print("Usuário não encontrado!")
-        return None
         
         if user.senha != senha:
             print("Senha incorreta!")
-        return None
-    
-        return user
-        
+            return None
 
+        if not user:
+            print("Usuário não encontrado!")
+            return None
         
+        return user
